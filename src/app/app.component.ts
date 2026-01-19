@@ -3,12 +3,13 @@ import { HeaderComponent } from "./header/header.component";
 import { DashboardStatusComponent } from "./dashboard/dashboard-status/dashboard-status.component";
 import { DashboardTrafficComponent } from "./dashboard/dashboard-traffic/dashboard-traffic.component";
 import { DashboardTicketsComponent } from "./dashboard/dashboard-tickets/dashboard-tickets.component";
+import { DashboardItemComponent } from "./dashboard/dashboard-item/dashboard-item.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  imports: [HeaderComponent, DashboardStatusComponent, DashboardTrafficComponent, DashboardTicketsComponent],
+  imports: [HeaderComponent, DashboardStatusComponent, DashboardTrafficComponent, DashboardTicketsComponent, DashboardItemComponent],
 })
 export class AppComponent {
 
