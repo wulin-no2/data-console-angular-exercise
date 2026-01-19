@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { DashboardItemComponent } from "../dashboard-item/dashboard-item.component";
 
 @Component({
   selector: 'app-dashboard-traffic',
   standalone: true,
-  imports: [],
+  imports: [DashboardItemComponent],
   templateUrl: './dashboard-traffic.component.html',
   styleUrl: './dashboard-traffic.component.css'
 })
@@ -39,6 +40,6 @@ export class DashboardTrafficComponent {
     },
   ];
   maxTraffic = Math.max(...this.dummyTrafficData.map((data) => data.value));
-  
+
 
 }
